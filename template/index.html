@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset= 'UTF-8'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Newz</title>
+
+    <div class="nav-bar">
+        <label>
+            <img id="logo" src="/static/img/newz1.png">
+        </label>       
+            <ul class="menu-content">
+                <li><a href="newt.html">New Technologies</a></li>
+                <li><a href="newhu.html">New Humanities </a></li>
+                <li><a href="newhe.html">New Health</a></li>           
+            </ul>
+    </div>
+</head>
+<body>
+    {% block conteudo %}
+    
+    {% endblock %}
+    <footer class="footer">
+        <div class="rodape">
+            <div class="container">
+                <div class="image">
+                    <h3>teste</h3>
+                    <!-- <img src="/static/img/newz1.png"> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
