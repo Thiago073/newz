@@ -37,9 +37,6 @@ body{
 .menu-content li a:hover {
     color: black;
 }
-.footer{
-    position: relative;
-}
 
 #logo{
     margin-top: 10px;
@@ -47,4 +44,13 @@ body{
     margin-bottom: -10px;
     size: 140px;
     width: 150px;
+}
+.rodape{
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 0px;
+
+    
 }
