@@ -19,6 +19,14 @@ def newhu():
 def newhe():
     return render_template('newhe.html')
 
+@app.route('/artigos.html')
+def artigos():
+    return render_template('artigos.html')
+
+@app.route('/info.html')
+def info():
+    return render_template('info.html')
+
 if __name__ == '__main__':
    app.run(debug=True)
 

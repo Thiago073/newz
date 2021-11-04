@@ -1,49 +1,80 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset= 'UTF-8'>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Newz</title>
+{% extends  "base.html"%}
+{% block content %}
 
-    <div class="nav-bar">
-        <label>
-            <img id="logo" src="/static/img/newz1.png">
-        </label>       
-            <ul class="menu-content">
-                <li><a href="newt.html">New Technologies</a></li>
-                <li><a href="newhu.html">New Humanities </a></li>
-                <li><a href="newhe.html">New Health</a></li>                        
-            </ul>
+<div class="container-fluid mb-5">
+    <div class="text-center mt-5">
+        <h1>Nossos Serviços</h1>
     </div>
-</head>
-<body>
-    {% block conteudo %}
-    
-    {% endblock %}
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box">
+                <a href="/info.html">
+                    <div class="our-services settings">
+                        <div class="icon"> <i class="fas fa-book-reader"></i></div>
+                        <h4>Quem Somos</h4>
+                        <p>Venha conhecer um pouco mais sobre nossa história .</p>
+                    </div>
 
-    <h2>Bem vindos a newz</h2>    
-    
-    <h3>Nossa missão</h3>
-
-    <p>publicar trabalhos científicos com celeridade, rigor científico e qualidade 
-        de editoração. E a visão é o reconhecimento da empresa como uma referência nacional em 
-        qualidade acadêmica para a divulgação científica.</p>
-
-
-
-    <footer class="footer">
-
-        <div class="image"> 
-
-            <div class="container">
-
-                <div class="rodape">   
-
-                    <h6>Todos os direitos reservados a Newz</h6> 
-
-                </div>
+                </a>
             </div>
-        </div>             
-    </footer>
-</body>
-</html>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <a href="/">
+                    <div class="our-services speedup">
+                        <div class="icon"> <i class="fas fa-podcast"></i> </div>
+                        <h4>PodCast</h4>
+                        <p>PodCast de livros de nossa editora e diversas outras .</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <a href="/">
+                    <div class="our-services privacy">
+                        <div class="icon"> <i class="fas fa-lightbulb"></i> </div>
+                        <h4>Ideias</h4>
+                        <p>Ideias para você criar seu primeiro artigo ou TCC .</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box">
+                <a href="/">
+                    <div class="our-services backups">
+                        <div class="icon"> <i class="fas fa-chart-bar"></i> </div>
+                        <h4>Parcerias</h4>
+                        <p>Nossos Parceiros desse projeto .</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <a href="/">
+                    <div class="our-services ssl">
+                        <div class="icon"> <i class="fas fa-edit"></i> </div>
+                        <h4>Artigos</h4>
+                        <p>Construa seu primeiro artigo com a nossa editora .</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <a href="/artigos.html">
+                    <div class="our-services database">
+                        <div class="icon"> <i class="fas fa-atom"></i> </div>
+                        <h4>Artigos Científicos</h4>
+                        <p>Conheça nossos principais Artigos Científicos .</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
