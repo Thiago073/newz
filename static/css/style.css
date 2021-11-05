@@ -12,7 +12,10 @@ body{
     height: 80px;
     display: flex;
 }
-
+#footer{
+    position: absolute;
+    margin-bottom: 0;
+}
 .menu-content li{
     list-style: none;
     display: inline-block;
@@ -366,4 +369,32 @@ fieldset.grupo .campo{
 
 #check{
     display: inline-block;
+}
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+}
+#Email, #Password{
+    color: white;
+}
+#img{
+    width: 500px;
+    height: 160px;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+    width: 150px;
+}
+.espaco{
+    margin-bottom: 220px;
+}
+.banner{
+    width: 100%;
 }

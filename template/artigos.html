@@ -1,80 +1,62 @@
 {% extends "base.html"%}
 {% block content %}
-<div class="page-content page-container" id="page-content">
-    <div class="padding">
-        <div class="row container d-flex justify-content-center">
-            <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">accordion Example</h4>
-                        <p class="card-description">Basic Accordian Example</p>
-                        <div class="mt-4">
-                            <div class="accordion" id="accordion" role="tablist">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="heading-1">
-                                        <h6 class="mb-0"> <a data-toggle="collapse" href="#collapse-1"
-                                                aria-expanded="false" aria-controls="collapse-1" data-abc="true"
-                                                class="collapsed"> How to download Adobe reader? </a> </h6>
-                                    </div>
-                                    <div id="collapse-1" class="collapse" role="tabpanel" aria-labelledby="heading-1"
-                                        data-parent="#accordion" style="">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-3"> <img
-                                                        src="https://img.icons8.com/bubbles/100/000000/administrator-male.png"
-                                                        class="mw-100" alt="image"> </div>
-                                                <div class="col-9">
-                                                    <p class="mb-0">For what reason would it be advisable for me to
-                                                        think about business content? That might be little bit risky to
-                                                        have crew member like them.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="heading-2">
-                                        <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-2"
-                                                aria-expanded="false" aria-controls="collapse-2" data-abc="true"> How to
-                                                convert a png to pdf using adobe reader </a> </h6>
-                                    </div>
-                                    <div id="collapse-2" class="collapse" role="tabpanel" aria-labelledby="heading-2"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>For what reason would it be advisable for me to think about business
-                                                content? That might be little bit risky to have crew member like them.
-                                            </p>
-                                            <ol class="pl-3 mt-4">
-                                                <li>connection and try again</li>
-                                                <li>correct while signing in</li>
-                                                <li>your account is accessible in your region</li>
-                                            </ol> <br>
-                                            <p class="text-success"> <i class="mdi mdi-alert-octagon mr-2"></i>you can
-                                                contact our support. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="heading-3">
-                                        <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-3"
-                                                aria-expanded="false" aria-controls="collapse-3" data-abc="true"> How to
-                                                buy paid version of adobe reader? </a> </h6>
-                                    </div>
-                                    <div id="collapse-3" class="collapse" role="tabpanel" aria-labelledby="heading-3"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p class="mb-0">For what reason would it be advisable for me to think about
-                                                business content? That might be little bit risky to have crew member
-                                                like them.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row pt-5 m-auto">
+      <div class="col-md-6 col-lg-4 pb-3">
+
+        <!-- Copy the content below until next comment -->
+        <div class="card card-custom bg-white border-white border-0">
+          <div class="card-custom-img"></div>
+          <div class="card-custom-avatar">
+            <img class="img-fluid" src="/static/img/newz.png" alt="Avatar"/>
+          </div>
+          <div class="card-body" style="overflow-y: auto">
+            <h4 class="card-title">New Technologies</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, te vix omittam fastidii, enim paulo omnes ea has, illud luptatum no qui. Sed ea qualisque urbanitas, purto elit nec te. Possim inermis antiopam ut eum. Eos te zril labore laboramus, quem erant nam in. Ut sed molestie
+                antiopam. At altera facilisis mel... <a href="https://getbootstrap.com/docs/4.0/components/card/#card-decks" target="_blank">card-decks</a> to align multiple cards nicely in a row.</p>
+          </div>
+          <div class="card-footer" style="background: inherit; border-color: inherit;">
+            <a href="newt.html" class="btn btn-primary">New Technologies</a>
+          </div>
         </div>
+        <!-- Copy until here -->
+
+      </div>
+      <div class="col-md-6 col-lg-4 pb-3">
+
+        <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
+        <div class="card card-custom bg-white border-white border-0" style="height: 450px">
+          <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+          <div class="card-custom-avatar">
+            <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
+          </div>
+          <div class="card-body" style="overflow-y: auto">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">You can also set maximum height on and the card will not expand, instead a scrollbar in the card body will appear.</p>
+            <p class="card-text">Some example text to show the scrollbar.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, te vix omittam fastidii, enim paulo omnes ea has, illud luptatum no qui. Sed ea qualisque urbanitas, purto elit nec te. Possim inermis antiopam ut eum. Eos te zril labore laboramus, quem erant nam in. Ut sed molestie
+              antiopam. At altera facilisis mel.</p>
+          </div>
+          <div class="card-footer" style="background: inherit; border-color: inherit;">
+            <a href="#" class="btn btn-primary">Option</a>
+            <a href="#" class="btn btn-outline-primary">Other option</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-lg-4 pb-3">
+
+        <div class="card card-custom bg-white border-white border-0">
+          <div class="card-body">
+            <img src="http://res.cloudinary.com/d3/image/upload/c_scale,h_450,q_auto:best/color-cards_lorvwg.jpg" alt="Colored cards" class="img-fluid">
+            <p>You can use this card together with standard Bootstrap 4 cards and use card features on it.</p>
+            <p class="h5 text-center pt-3">See the card on GitHub:</p>
+            <p class="h1 text-center"><a href="https://github.com/peterdanis/custom-bootstrap-cards" target="_blank"><i class="fa fa-github"></i></a></p>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-</div>
+  </div>  
 {% endblock %}

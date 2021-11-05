@@ -1,118 +1,41 @@
 {% extends  "base.html"%}
 {% block content %}
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Newz</title>
-</head>
-<body class="poucas">
 
-        <div>
-            <h1 id="titulo">Cadastro de Tecnologia</h1>
-            <p id="subtitulo">Digite suas informações</p>
-            <br>
-        </div>
-
-        <form>
-
-            <fieldset class="grupo">
-
-                <div>
-                    <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="nome">      
-                </div>
-
-                <div class="campo">
-                    <label for="sobrenome"><strong>Sobrenome</strong></label>
-                    <input type="text" name="sobrenome" id="sobrenome">               
-                </div>
-
-           </fieldset>
-
-           <div class="campo">
-               <label for="email"><Strong>Email</Strong></label>
-               <input type="email" name="email" id="email">
-           </div>
-
-
-           <div class="campo">
-               <label><strong>Qual programador você procura</strong></label>
-               
-               <label>
-
-                <input type="radio" name="devweb" value="frontend" checked>Front-end
-
-               </label>
-
-               <label>
-
-                <input type="radio" name="devweb" value="backend">Back-end
-
-               </label>
-
-               <label>  
-
-                <input type="radio" name="devweb" value="fullstack">Fullstack
-
-               </label>
-
-           </div>
-
-           <div class="campo">
-            <label for="senioridade"><strong>Senioridade</strong></label>
-            <select id="senioridade">
-                <option selected disabled value="">Selecione</option>
-                <option>Junior</option>
-                <option>Pleno</option>
-                <option>Senior</option>
-            </select>
-           </div>
-
-           <fieldset class="grupo">
-               <div class="check">
-                   <label><strong>Selecione a tecnologia que você utiliza:</strong></label><br><br>
-                   <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-                   <label for="tecnologia1">HTML</label>
-                   <input type="checkbox" id="tecnologia1" name="tecnologia2" value="CSS">
-                   <label for="tecnologia2">CSS</label>
-                   <input type="checkbox" id="tecnologia1" name="tecnologia3" value="Javascript">
-                   <label for="tecnologia3">Javascript</label>
-                   <input type="checkbox" id="tecnologia1" name="tecnologia4" value="PHP">
-                   <label for="tecnologia4">PHP</label>
-                   <input type="checkbox" id="tecnologia1" name="tecnologia5" value="C#">
-                   <label for="tecnologia5">C#</label>
-                   <input type="checkbox" id="tecnologia1" name="tecnologia6" value="Python">
-                   <label for="tecnologia6">Python</label>
-                   <input type="checkbox" id="tecnologia1" name="tecnologia7" value="Java">
-                   <label for="tecnologia7">JavaL</label>
-               </div>
-           </fieldset>
-
-            <div class="campo">
-               <br>
-               <label><strong>Conte um pouco da sua experiência e como conheceu nossa empresa</strong></label>
-               <textarea row="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+<section class="py-5">
+    <div class="container">
+        <!-- FOR DEMO PURPOSE -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <header class="text-center pb-5">
+                    <h1 class="h2">New Technologies</h1>
+                </header>
             </div>
-
-            <button class="botao" type="submit">Concluído</button>
-
+        </div><!-- END -->
 
 
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
 
+                <!-- CUSTOM BLOCKQUOTE -->
+                <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                    <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                    <p class="mb-0 mt-2 font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-        </form>
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                         <a href="/index.html" class="text-info">@Newz</a>."</p>
+                    <footer class="blockquote-footer pt-4 mt-4 border-top">María Antonieta de las Nieves,
+                        <cite title="Source Title">New Technologies</cite>
+                    </footer>
+                </blockquote><!-- END -->
 
-
-</body>
-</html>
-
-
-
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
