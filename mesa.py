@@ -31,6 +31,10 @@ def artigos():
 def info():
     return render_template('info.html')
 
+@app.route('/criar.html')
+def criar():
+    return render_template('criar.html')
+
 if __name__ == '__main__':
    app.run(debug=True)
 
